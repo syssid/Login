@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity5">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_marginBottom="10dp"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+        <ImageView
+            android:src="@drawable/userr"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi! SIDHARTHA BEHERA"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:textColor="@color/teal_700"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:text="You are at : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textColor="@color/teal_700"
+                android:id="@+id/tvLocation"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvRefreshL"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/Red"
+            android:text=" Get wrong location ? Refresh here"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/teal_700"
+                android:text="Current time is : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:text="Capture Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/ivCam"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/cam"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/ivUpload"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvRefresh"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="14sp"
+            android:text=" Are you facing problem with Default Camera? Click here for Custom Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:textColor="@color/teal_700"
+                android:text="Please Enter Remarks :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etRemarks"
+                android:paddingLeft="5dp"
+                android:background="@drawable/name_dr"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnClick"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
